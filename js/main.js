@@ -6,6 +6,8 @@ botonMenu.addEventListener('click', ()=>{
     menuMovil.classList.toggle('nav-menu-show');
 });
 
+console.log("HOLA MUNDO");
+
 //SLIDER PAGINA WEB
 const imagenesSlider = ['./img/slider-img/slider1.jpg', './img/slider-img/slider2.jpg', './img/slider-img/slider3.jpg'];
 let index = 0;
@@ -40,4 +42,4 @@ if (window.location.href.includes('index.html')) {
     cambiarImagenes();
 }
 
-console.log(imagenesSlider)
+console.log(imagenesSlider);
