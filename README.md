@@ -12,8 +12,12 @@
     
     2. Te diriges a la carpeta donde guardas tus proyectos
   
-    3. click derecho, seleccionas el Git Bash, copias y pegas el siguiente codigo en la terminal
+    3. click derecho, seleccionas el Git Bash y se abrirá una terminal
+
+    4. copias y pegas el siguiente codigo en la terminal
   
     git clone https://github.com/chrismcfly/Sistemas_Inteligentes_PaginaWeb_Chatbot.git
+
+    5. listo, tienes el repositorio en tu proyecto, recuerda hacer git pull cuando se requiera
 
   
