@@ -38,8 +38,6 @@ async function cambiarImagenes() {
     cambiarImagenes();
 };
 
-if (window.location.href.includes('index.html')) {
-    cambiarImagenes();
-}
+cambiarImagenes();
 
 console.log(imagenesSlider);
