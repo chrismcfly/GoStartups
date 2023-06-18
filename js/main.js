@@ -15,6 +15,7 @@ function Delay(ms){
 }
 
 async function cambiarImagenes() {
+    console.log("hola mundo");
     const sliderImagenes = document.getElementById('imagenes-slider');
     sliderImagenes.style.opacity = "0";
     
@@ -39,4 +40,4 @@ if (window.location.href.includes('index.html')) {
     cambiarImagenes();
 }
 
-
+console.log(imagenesSlider)
