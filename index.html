@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Inteligentes</title>
+    <!-- LINK AL CSS PRINCIPAL -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- LINK A LA FUENTE ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- LINK FONT AWESOME PARA ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="botonBars" class="bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="wrapper">
+        <!-- BARRA DE NAVEGACIÓN -->
+        <header>
+            <nav class="nav-container">
+                <div class="nav-bar-logo">
+                    <a class="nav-container-titlelogo" href="./index.html">go<span>Startups</span></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-link-1"><a href="#solutions">Nuestras Soluciones</a></li>
+                    <li class="nav-link-2"><a href="#contact">Contacto</a></li>
+                    <a class="nav-link-3" href="./login.html">Iniciar Sesión</a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- PRESENTACIÓN -->
+        <main>
+            <div class="main-container">
+                <div class="main-text">
+                    <h1>Haz despegar tu <span>Startup</span> en Perú con nosotros, Crea tu futuro Exitoso</h1>
+                    <a href="#contact" class="button-main">contáctanos</a>
+                </div>
+                <img class="main-img" src="./img/main-iot.png" alt="imagen de iot principal">
+            </div>
+        </main>
+
+        <!-- CONVIERTE TU VISION EN REALIDAD -->
+        <section class="aboutiot-main">
+            <div class="aboutiot-container">
+                <h2>Convierte tu visión en realidad y alcanza el éxito empresarial</h2>
+                <p>¡Descubre nuestro apoyo integral y personalizado para impulsar con éxito tu Startup encuentra una amplia gama de recursos, 
+                    y herramientas especializadas diseñadas para llevarte al siguiente nivel empresarial.</p>
+            </div>
+        </section>
+
+        <!-- SLIDER DE LA PAGINA WEB -->
+        <section class="slider-main">
+            <div id="slider-container" class="slider-container">
+                <img id="imagenes-slider" src="" alt="imagenes-slider">
+            </div>
+        </section>
+
+        <!-- NUESTRAS SOLUCIONES -->
+        <section class="solutions-main" id="solutions">
+            <div class="solutions-container">
+                <h2>Nuestras Soluciones</h2>
+                <div class="solutions-grid">
+                    <article>
+                        <img class="solutions-img" src="./img/solutions-networking.png" alt="imagen de networking">
+                        <h3>Networking</h3>
+                        <p>Garantizamos la optima conectividad de diversos dispositivos de su empresa.</p>
+                    </article>
+                    <article>
+                        <img class="solutions-img" src="./img/solutions-cloud.png" alt="imagen de cloud">
+                        <h3>Cloud</h3>
+                        <p>Infraestructura para Datacenter On Premise, Cloud o hibrido, AWS.</p>
+                    </article>
+                    <article>
+                        <img class="solutions-img" src="./img/solutions-consultoria.png" alt="imagen de consultoria">
+                        <h3>Consultoría</h3>
+                        <p>Asesoría en la creación de prototipos y construcción de hoja de ruta y arquitectura empresarial.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="form-main" id="contact">
+            <div class="form-container">
+                <div class="form-contact">
+                    <h2>Déjanos un mensaje</h2>
+                    <form action="#" class="form-form">
+
+                        <label for="nombre" class="form-label">Nombre<span> *</span></label>
+                        <input class="form-input" type="text" name="nombre" id="nombre" required>
+
+                        <label for="email" class="form-label">Correo<span> *</span></label>
+                        <input class="form-input" type="email" name="email" id="email" required>
+
+                        <div class="form-tel-company">
+                            <div class="form-tel-company-card1">
+                                <label for="tel">Teléfono<span> *</span></label>
+                                <input type="tel" name="tel" id="tel" required>
+                            </div>
+
+                            <div class="form-tel-company-card2">
+                                <label for="company">Empresa</label>
+                                <input type="text" name="company" id="company">
+                            </div>
+                        </div>
+
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-txtarea" name="message" id="message"></textarea>
+
+                        <input class="button-form" type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div class="form-info">
+                    <h2>goStartups</h2>
+                    <p><i class="fa-solid fa-location-dot"></i> Fuente Ovejuna 125, Santa Anita</p>
+                    <p><i class="fa-solid fa-envelope"></i> admin@gostartups.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +51 924670583</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="footer-main">
+            <div class="footer-container">
+                <p>Desarrollado por el <strong>Grupo N°4</strong> de Sistemas Inteligentes 2023 -- Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
