@@ -1,632 +1,623 @@
-        /* RESET DE ESTILOS CSS */
-        
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;
-            outline: none;
-            font-family: 'Roboto', sans-serif;
-            color: #111111;
-        }
-        /* CONTENEDOR DE LA PAGINA WEB */
-        
-        .wrapper {
-            margin: 0 auto;
-            width: 68%;
-        }
-        
-        .bars {
-            display: none;
-            position: absolute;
-            font-size: 1.6rem;
-            top: 24px;
-            right: 30px;
-        }
-        /* BOTONES */
-        
-        .button-main {
-            margin-top: 15px;
-            text-align: center;
-            height: 18px;
-            width: 145px;
-            line-height: 18px;
-            border: 15px solid #1486FF;
-            border-radius: 12px;
-            background: #1486FF;
-            color: #ffffff;
-            font-size: 22px;
-        }
-        
-        .button-form {
-            margin-top: 35px;
-            padding: 5px;
-            height: 45px;
-            width: 130px;
-            color: #ffffff;
-            border: none;
-            border-radius: 12px;
-            background: #1486FF;
-            font-size: 20px;
-        }
-        
-        .button-form:hover {
-            cursor: pointer;
-        }
-        
-        .button-login {
-            margin-top: 40px;
-            text-align: center;
-            color: #ffffff;
-            height: 55px;
-            border: none;
-            border-radius: 12px;
-            background: #1486FF;
-            font-size: 18px;
-        }
-        
-        .button-login:hover {
-            cursor: pointer;
-        }
-        /* BARRA DE NAVEGACIÓN */
-        
-        header {
-            height: 80px;
-        }
-        
-        header .nav-container {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        header .nav-container .nav-container-titlelogo {
-            font-size: 28px;
-            font-weight: 600;
-        }
-        
-        header .nav-container .nav-container-titlelogo span {
-            color: #1486FF;
-        }
-        
-        header .nav-container a {
-            line-height: 80px;
-        }
-        
-        header .nav-container .nav-bar-icon {
-            display: flex;
-            align-items: center;
-        }
-        
-        header .nav-container ul {
-            display: flex;
-            font-size: 18px;
-            align-items: center;
-        }
-        
-        header .nav-container ul .nav-link-1,
-        .nav-link-2 {
-            line-height: 10vh;
-            margin-right: 35px;
-        }
-        /* PRESENTACIÓN */
-        
-        main {
-            height: 500px;
-            margin-top: 50px;
-        }
-        
-        main .main-container {
-            display: flex;
-        }
-        
-        main .main-container .main-img {
-            width: 30vw;
-        }
-        
-        main .main-container .main-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        main .main-container .main-text h1 {
-            font-size: 60px;
-        }
+/* RESET DE ESTILOS CSS */
 
-        /* SLIDER */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+}
 
-        .slider-main {
-            height: 500px;
-            margin-bottom: 50px;
-        }
+/* CONTENEDOR DE LA PAGINA WEB */
 
-        .slider-main .slider-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.459);
-            border-radius: 30px;
-        }
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
 
-        .slider-main .slider-container img {
-            width: 100%;
-            height: 100%;
-            border-radius: 30px;
-            transition: opacity 1s ease-in-out; /* Agregamos una transición de fundido */
-            opacity: 0; /* Inicialmente, la imagen está oculta */
-            object-fit: cover;
-        }
+.bars {
+  display: none;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 24px;
+  right: 30px;
+}
 
-        /* SOBRE EL INTERNET DE LAS COSAS */
-        
-        .aboutiot-main {
-            height: 300px;
-        }
-        
-        .aboutiot-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .aboutiot-container h2 {
-            margin-top: 30px;
-            font-size: 40px;
-        }
-        
-        .aboutiot-container p {
-            margin-top: 30px;
-            text-align: justify;
-            line-height: 35px;
-            font-size: 21px;
-            color: #707070;
-            font-weight: 500;
-        }
-        /* NUESTRAS SOLUCIONES */
-        
-        .solutions-main {
-            height: 600px;
-        }
-        
-        .solutions-container {
-            text-align: center;
-        }
-        
-        .solutions-container h2 {
-            font-size: 40px;
-        }
-        
-        .solutions-container .solutions-grid {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 85px;
-        }
-        
-        .solutions-container .solutions-grid .solutions-img {
-            width: 250px;
-            height: 230px;
-        }
-        
-        .solutions-container .solutions-grid h3 {
-            font-size: 30px;
-            margin: 25px 0px 20px 0px;
-        }
-        
-        .solutions-container .solutions-grid p {
-            font-size: 18px;
-            color: #707070;
-        }
-        /* CONTACTO */
-        
-        .form-main {
-            height: 630px;
-        }
-        
-        .form-container {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .form-container .form-contact {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .form-container .form-contact h2 {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        
-        .form-container .form-contact .form-form {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .form-label {
-            margin: 10px 0px 10px 0px;
-        }
-        
-        .form-label span {
-            color: #ff0000;
-            font-weight: 600;
-        }
-        
-        .form-container .form-contact .form-form .form-input {
-            height: 38px;
-            width: 34vw;
-            background: #E6E6E6;
-            border: none;
-            text-indent: 10px;
-        }
-        
-        .form-container .form-contact .form-form .form-txtarea {
-            height: 120px;
-            background: #E6E6E6;
-            border: none;
-            resize: none;
-            text-indent: 10px;
-        }
-        
-        .form-tel-company {
-            margin: 20px 0px 0px 0px;
-            display: flex;
-        }
-        
-        .form-tel-company-card1,
-        .form-tel-company-card2 {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .form-tel-company-card1 label,
-        .form-tel-company-card2 label {
-            margin-bottom: 10px;
-        }
-        
-        .form-tel-company-card1 {
-            margin-right: 15px;
-        }
-        
-        .form-tel-company-card1 span {
-            color: #ff0000;
-        }
-        
-        .form-tel-company input {
-            height: 38px;
-            width: 16.55vw;
-            background: #E6E6E6;
-            border: none;
-            text-indent: 10px;
-        }
-        /* CONTACTO - INFO */
-        
-        .form-container .form-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-right: 100px;
-        }
-        
-        .form-container .form-info h2 {
-            margin-bottom: 25px;
-            font-size: 35px;
-        }
-        
-        .form-container .form-info p {
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-        /* FOOTER */
-        
-        .footer-main {
-            height: 4vh;
-        }
-        
-        .footer-container {
-            text-align: center;
-        }
-        /* PAGINA WEB LOGIN */
-        
-        .body-login {
-            background: url(../img/login-background.png) no-repeat;
-        }
-        /* LOGIN */
-        
-        .login-main {
-            height: 86vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .login-container {
-            width: 50vh;
-            height: 50vh;
-            background: #ffffff;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.13);
-        }
-        
-        .login-form {
-            width: 35vh;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .login-form h2 {
-            margin: 48px 0px 40px 0px;
-            text-align: center;
-            font-size: 35px;
-        }
-        
-        .login-label {
-            font-size: 18px;
-            margin-top: 20px;
-        }
-        
-        .login-form .login-input {
-            margin: 4px 0px 4px 0px;
-            height: 35px;
-            border: none;
-            border-bottom: 2px solid #E6E6E6;
-            font-size: 18px;
-        }
-        /* RESPONSIVE */
-        /* INDEX */
-        
-        @media screen and (max-width: 1280px) {
-            main {
-                height: 50vh;
-                margin-top: 55px;
-            }
-            main .main-container .main-text h1 {
-                font-size: 50px;
-            }
-            .solutions-main {
-                margin-top: 20px;
-                height: 68vh;
-            }
-            .form-main {
-                height: 68vh;
-            }
-            .form-container .form-info {
-                margin-right: 0px;
-            }
-        }
-        
-        @media screen and (max-width: 1080px) {
-            main {
-                height: 45vh;
-                margin-top: 75px;
-            }
-            main .main-container .main-text h1 {
-                font-size: 40px;
-            }
-            .aboutiot-main {
-                height: 35vh;
-            }
-            .aboutiot-container h2 {
-                margin-top: 30px;
-                font-size: 30px;
-            }
-            .solutions-main {
-                height: 160vh;
-            }
-            .solutions-container .solutions-grid {
-                margin-top: 50px;
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 35px;
-            }
-            .solutions-container .solutions-grid p {
-                font-size: 18px;
-                color: #707070;
-                width: 50vw;
-                margin: 0 auto;
-            }
-        }
-        
-        @media screen and (max-width: 960px) {
-            .button-main {
-                margin-top: 30px;
-            }
-            main {
-                height: 85vh;
-                margin-top: 30px;
-            }
-            main .main-container {
-                display: flex;
-                flex-direction: column-reverse;
-                align-items: center;
-            }
-            .aboutiot-main {
-                height: 32vh;
-            }
-            main .main-container .main-img {
-                width: 400px;
-            }
-            main .main-container .main-text {
-                width: 60vw;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .solutions-main {
-                height: 160vh;
-            }
-            .slider-main .slider-container img{
-                background-size: auto 100%; /* Ajusta el tamaño de la imagen a la altura del contenedor */
-                background-position: left; /* Alinea la imagen a la izquierda */
-            }
-            .form-main {
-                height: 95vh;
-            }
-            .form-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .form-container .form-info {
-                margin-left: 20px;
-            }
-            .form-info {
-                margin-top: 40px;
-            }
-            .form-container .form-contact .form-form .form-input {
-                width: 48vw;
-            }
-            .form-tel-company input {
-                width: 23.2vw;
-            }
-            .footer-main {
-                height: 6vh;
-            }
-        }
-        
-        @media screen and (max-width: 800px) {
-            .button-main {
-                margin-top: 10px;
-            }
-            .bars {
-                position: fixed;
-                display: inline;
-            }
-            header .nav-container ul {
-                display: block;
-                position: fixed;
-                top: 0;
-                left: 0;
-                background: #2f3640;
-                opacity: .9;
-                height: 100%;
-                width: 50%;
-                padding: 20px;
-                transform: translateX(-500px);
-                transition: transform .5s ease-in-out;
-            }
-            header .nav-container ul .nav-link-1,
-            .nav-link-2 {
-                margin-right: 0px;
-            }
-            /*CAMBIAR AL MENU MOVIL*/
-            header .nav-container .nav-menu-show {
-                transform: translateX(0px);
-            }
-            header .nav-container .nav-menu a {
-                color: #ffffff;
-            }
-            .aboutiot-main {
-                height: 42vh;
-            }
-            .login-form h2 {
-                margin: 35px 0px 30px 0px;
-            }
-        }
-        
-        @media screen and (max-width: 600px) {
-            .wrapper {
-                margin: 0 auto;
-                width: 75%;
-            }
-            main .main-container .main-img {
-                width: 68vw;
-            }
-            .aboutiot-main {
-                height: 50vh;
-            }
-            .solutions-main {
-                height: 170vh;
-            }
-            .form-container .form-contact .form-form .form-input {
-                width: 60vw;
-            }
-            .form-tel-company input {
-                width: 28.3vw;
-            }
-            /*
-            LOGIN
-            */
-            .login-main {
-                height: 82vh;
-            }
-            .login-form {
-                width: 60vw;
-            }
-        }
-        
-        @media screen and (max-width: 490px) {
-            .wrapper {
-                margin: 0 auto;
-                width: 90%;
-            }
-            main{
-                height: 65vh;
-            }
-            main .main-container .main-text h1 {
-                font-size: 35px;
-                width: 90vw;
-            }
-            main .main-container .main-img {
-                width: 75vw;
-            }
-            .aboutiot-main {
-                height: 470px;
-                padding: 20px 0px 20px 0px;
-            }
-            .solutions-main {
-                height: 1400px;
-                padding: 20px 0px 20px 0px;
-            }
-            .solutions-container .solutions-grid p {
-                width: 70vw;
-                margin: 0 auto;
-            }
-            .form-main {
-                height: 750px;
-                padding: 20px 0px 20px 0px;
-            }
-            .form-container .form-contact .form-form .form-input {
-                width: 80vw;
-            }
-            .form-tel-company input {
-                width: 38vw;
-            }
-            .form-container .form-info {
-                margin: 40px 0px 0px 0px;
-            }
-            .footer-main {
-                height: 10vh;
-            }
-            .login-form h2 {
-                margin: 30px 0px 10px 0px;
-            }
-        }
-        
-        @media screen and (max-width: 375px) {
-            main {
-                height: 60vh;
-                margin-top: 30px;
-            }
-            .button-main {
-                margin-top: 40px;
-            }
-            .aboutiot-main {
-                height: 540px;
-                padding: 30px 0px 40px 0px;
-            }
-            .solutions-main {
-                height: 1400px;
-                padding: 20px 0px 20px 0px;
-            }
-            .form-main {
-                height: 850px;
-                padding: 20px 0px 20px 0px;
-            }
-            header .nav-container ul {
-                width: 70%;
-            }
-        }
+/* BOTONES */
+
+.button-main {
+  margin-top: 15px;
+  text-align: center;
+  height: 50px;
+  width: 50%;
+  line-height: 50px;
+  border-radius: 12px;
+  background: #1486ff;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.button-form {
+  margin-top: 20px;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  background: #1486ff;
+  font-size: 20px;
+}
+
+.button-form:hover {
+  cursor: pointer;
+}
+
+.button-login {
+  margin-top: 20px;
+  text-align: center;
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  background: #1486ff;
+  font-size: 18px;
+}
+
+.button-login > a {
+  display: block;
+  line-height: 55px;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.button-login:hover {
+  cursor: pointer;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+header {
+  height: 80px;
+}
+
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-container .nav-container-titlelogo {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+header .nav-container .nav-container-titlelogo span {
+  color: #1486ff;
+}
+
+header .nav-container a {
+  line-height: 80px;
+}
+
+header .nav-container .nav-bar-icon {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-container ul {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+
+header .nav-container ul .nav-link-1,
+.nav-link-2 {
+  margin-right: 30px;
+}
+
+/* PRESENTACIÓN */
+
+main {
+  height: auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+main .main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .main-container .main-img {
+  width: 40%;
+  max-width: 500px;
+}
+
+main .main-container .main-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .main-container .main-text h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
+/* SLIDER */
+
+.slider-main {
+  height: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.slider-main .slider-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.459);
+  border-radius: 30px;
+}
+
+.slider-main .slider-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  object-fit: cover;
+}
+
+/* SOBRE EL INTERNET DE LAS COSAS */
+
+.aboutiot-main {
+  height: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.aboutiot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutiot-container h2 {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.aboutiot-container p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #707070;
+  font-weight: 500;
+}
+
+/* NUESTRAS SOLUCIONES */
+
+.solutions-main {
+  height: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.solutions-container {
+  text-align: center;
+}
+
+.solutions-container h2 {
+  font-size: 30px;
+}
+
+.solutions-container .solutions-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.solutions-container .solutions-grid .solutions-img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  max-height: 230px;
+}
+
+.solutions-container .solutions-grid h3 {
+  font-size: 24px;
+  margin: 20px 0px 15px 0px;
+}
+
+.solutions-container .solutions-grid p {
+  font-size: 16px;
+  color: #707070;
+}
+
+/* CONTACTO */
+
+.form-main {
+  height: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-container .form-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .form-contact h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.form-container .form-contact .form-form {
+  display: flex;
+  flex-direction: column;
+  width: 120%;
+}
+
+.form-label {
+  margin: 10px 0px 10px 0px;
+}
+
+.form-label span {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.form-container .form-contact .form-form .form-input {
+  height: 38px;
+  width: 100%;
+  background: #e6e6e6;
+  border: none;
+  text-indent: 10px;
+  font-size: 16px;
+}
+
+.form-container .form-contact .form-form .form-txtarea {
+  height: 120px;
+  width: 100%;
+  background: #e6e6e6;
+  border: none;
+  resize: none;
+  text-indent: 10px;
+  font-size: 16px;
+}
+
+.form-tel-company {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-tel-company-card1,
+.form-tel-company-card2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  margin-bottom: 20px;
+}
+
+.form-tel-company-card1 label,
+.form-tel-company-card2 label {
+  margin-bottom: 10px;
+}
+
+.form-tel-company input {
+  height: 38px;
+  width: 100%;
+  background: #e6e6e6;
+  border: none;
+  text-indent: 10px;
+  font-size: 16px;
+}
+
+/* CONTACTO - INFO */
+
+.form-container .form-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.form-container .form-info h2 {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.form-container .form-info p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer-main {
+  height: auto;
+  padding: 20px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+/* PAGINA WEB LOGIN */
+
+.body-login {
+  background: url(../img/login-background.png) no-repeat;
+}
+
+/* LOGIN */
+
+.login-main {
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.13);
+  padding: 20px;
+}
+
+.login-form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  margin: 20px 0px 15px 0px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.login-label {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.login-form .login-input {
+  margin: 4px 0px 10px 0px;
+  height: 38px;
+  border: none;
+  border-bottom: 2px solid #e6e6e6;
+  font-size: 16px;
+}
+
+/* RESPONSIVE */
+
+/* INDEX */
+
+@media screen and (max-width: 1280px) {
+  .main-container .main-text h1 {
+    font-size: 35px;
+  }
+  .solutions-main {
+    height: auto;
+  }
+  .form-main {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    margin-top: 50px;
+  }
+  .main-container .main-text h1 {
+    font-size: 30px;
+  }
+  .form-container .form-contact .form-form {
+    width: 100%;
+  }
+  .aboutiot-main {
+    height: auto;
+  }
+  .solutions-container .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .button-main {
+    margin-top: 10px;
+  }
+  main .main-container .main-text h1 {
+    font-size: 40px;
+  }
+  main {
+    margin-top: 20px;
+  }
+  main .main-container {
+    align-items: center;
+  }
+  .aboutiot-main {
+    height: auto;
+  }
+  main .main-container .main-img {
+    width: 60%;
+  }
+  .main-container .main-text {
+    width: 100%;
+  }
+  .solutions-main {
+    height: auto;
+  }
+  .slider-main .slider-container img {
+    background-size: auto 100%;
+    background-position: left;
+  }
+  .form-main {
+    height: auto;
+  }
+  .form-container {
+    flex-direction: column;
+  }
+  .form-container .form-info {
+    margin-right: 0px;
+    margin-top: 60px;
+  }
+  .footer-main {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .button-main {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .bars {
+    position: fixed;
+    display: inline;
+  }
+  main .main-container .main-text h1 {
+    text-align: center;
+  }
+  header .nav-container ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    opacity: 0.9;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+  header .nav-container ul .nav-link-1,
+  .nav-link-2 {
+    margin-right: 0px;
+  }
+  header .nav-container .nav-menu-show {
+    transform: translateX(0px);
+  }
+  header .nav-container .nav-menu a {
+    color: #ffffff;
+  }
+  .aboutiot-main {
+    height: auto;
+  }
+  .login-main {
+    height: calc(100vh - 160px);
+  }
+  .login-form h2 {
+    margin: 15px 0px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .nav-bar-logo > a {
+    margin-left: 15px;
+  }
+  main .main-container .main-img {
+    margin-top: 30px;
+    width: 80%;
+  }
+  .aboutiot-main {
+    height: auto;
+  }
+  .solutions-main {
+    height: auto;
+  }
+  .solutions-container .solutions-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-container {
+    align-items: center;
+  }
+  .form-container .form-contact .form-form .form-input {
+    width: 100%;
+  }
+  .form-tel-company input {
+    width: 100%;
+  }
+  .login-main {
+    padding: 0px 20px 0px 20px;
+  }
+  .login-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  main {
+    margin-top: 20px;
+  }
+  .button-main {
+    margin-top: 20px;
+  }
+  .aboutiot-main {
+    margin-bottom: 30px;
+  }
+  .solutions-main {
+    margin-bottom: 30px;
+  }
+  .form-main {
+    margin-bottom: 30px;
+  }
+  .login-main {
+    height: calc(100vh - 180px);
+  }
+  .login-form h2 {
+    margin: 10px 0px 5px 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    margin-top: 10px;
+  }
+  .button-main {
+    margin-top: 30px;
+  }
+  .aboutiot-main {
+    margin-bottom: 20px;
+  }
+  .solutions-main {
+    margin-bottom: 20px;
+  }
+  .form-main {
+    margin-bottom: 20px;
+  }
+  .login-form h2 {
+    margin: 5px 0px 0px 0px;
+  }
+}

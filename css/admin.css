@@ -1,0 +1,201 @@
+/* (A) GLOBAL */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  padding: 0; margin: 0;
+}
+
+/* (B) SIDEBAR */
+/* (B1) SIDEBAR ITSELF */
+#pgside {
+  width: 200px;
+  flex-shrink: 0;
+  transition: width 0.2s;
+  background: #283039;
+}
+
+/* (B2) USER OR BRANDING */
+#pgside #pguser {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+}
+#pgside #pguser img {
+  width: 50px;
+  margin-right: 5px;
+  border-radius: 50%
+}
+
+/* (B3) SIDEBAR ITEMS */
+#pgside, #pgside a { color: #fff; }
+#pgside a {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+#pgside a.current { background: #1486ff; }
+#pgside a:hover { background: #1486ff; }
+
+/* (B4) SIDEBAR ICONS & TEXT */
+#pgside i.ico, #pgside i.txt { font-style: normal; }
+#pgside i.ico {
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+/* (B5) SMALL SCREEN TRANSFORMATION */
+@media screen and (max-width:768px) {
+  #pgside { width: 70px; }
+  #pgside #pguser { justify-content: center; }
+  #pgside a {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #pgside i.ico {
+    font-size: 1.5em;
+    margin-right: 0;
+  }
+  #pgside i.txt { display: none; }
+}
+
+/* (C) MAIN CONTENTS */
+#pgmain {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+.form {
+  max-width: 600px; /* optional */
+  padding: 20px;
+  border: 1px solid #eee;
+  background: #f2f2f2;
+}
+
+/* (B) FIELDS & LABELS */
+.form label, .form input, .form textarea, .form select, .form button {
+  display: block;
+  width: 100%;
+}
+.form textarea {
+  height: 100px;
+}
+.form select {
+  height: 50px;
+}
+.form label { padding: 10px 0; }
+.form input, .form textarea, .form select { padding: 10px; }
+
+/* (C) BUTTONS */
+input[type=button], input[type=submit], button {
+  height: 50px;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  background: #1486ff;
+  cursor: pointer;
+}
+input[type=submit] { margin-top: 20px; }
+
+/* (X) DOES NOT MATTER */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+#pgmain>h3 {
+  text-align: center;
+  font-size: 19px;
+}
+
+#pgmain>p {
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+#pgmain>button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* NUESTRAS SOLUCIONES */
+
+.solutions-main {
+  height: auto;
+  margin-bottom: 50px;
+  
+}
+
+.solutions-container {
+  text-align: center;
+}
+
+.solutions-container h2 {
+  font-size: 30px;
+}
+
+.solutions-container .solutions-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.solutions-container .solutions-grid .solutions-img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  max-height: 230px;
+}
+
+.solutions-container .solutions-grid h3 {
+  font-size: 24px;
+  margin: 20px 0px 15px 0px;
+}
+
+.solutions-container .solutions-grid p {
+  font-size: 16px;
+  color: #707070;
+}
+
+.solutions-container .solutions-grid article>#boton-plan {
+  background: #82beff;
+}
+
+.recursos, .actualizaciones {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.recursos>button {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .solutions-container .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recursos, .actualizaciones {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .solutions-container .solutions-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .solutions-container .solutions-grid article>button {
+    width: 100%;
+  }
+}
+

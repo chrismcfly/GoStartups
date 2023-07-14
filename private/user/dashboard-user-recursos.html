@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard Usuario</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <link rel="stylesheet" href="../../css/admin.css">
+  </head>
+  <body>
+    <!-- (A) SIDEBAR -->
+    <div id="pgside">
+      <!-- (A1) BRANDING OR USER -->
+      <!-- LINK TO DASHBOARD OR LOGOUT -->
+      <div id="pguser">
+        <img src="../../img/dashboard/potato.png">
+        <i class="txt" id="pgname">Usuario</i>
+      </div>
+
+      <!-- (A2) MENU ITEMS -->
+      <a href="dashboard-user.html">
+        <i class="ico">&#9733;</i>
+        <i class="txt">Inicio</i>
+      </a>
+      <a href="#" class="current">
+        <i class="ico">&#9728;</i>
+        <i class="txt">Recursos Gratis</i>
+      </a>
+      <a href="dashboard-user-soporte.html">
+        <i class="ico">&#9737;</i>
+        <i class="txt">Soporte</i>
+      </a>
+      <a href="dashboard-user-planes.html">
+        <i class="ico">&bowtie;</i>
+        <i class="txt">Planes</i>
+      </a>
+      <a href="#" id="salir">
+        <i class="ico">&CircleTimes;</i>
+        <i class="txt">Salir</i>
+      </a>
+    </div>
+
+    <!-- (B) MAIN -->
+    <main id="pgmain">
+      <h2 id="pgwelcome" style="display: none;">Tu Nombre</h2>
+      <div class="recursos">
+        <h3>Impulsa el crecimiento de tu startup con nuestros nuevos recurso gratuito</h3>
+        <p>En goStartups, entendemos los desafíos a los que se enfrentan las startups en sus etapas iniciales. Sabemos que los recursos pueden ser limitados y que cada pequeña ayuda cuenta. Es por eso que nos complace anunciar nuestro nuevo recurso gratuito diseñado específicamente para apoyar el crecimiento y éxito de las startups emergentes. Queremos brindarte las herramientas y el apoyo que necesitas para llevar tu negocio al siguiente nivel. Descubre cómo nuestros recursos gratuitos pueden marcar la diferencia en tu startup.</p>
+        <button class="btn-resource-1">Guía de organización para startups</button>
+        <button class="btn-resource-2">consejos y trucos para startups</button>
+        <button class="btn-resource-3">Mejora tu Productividad</button>
+        <button class="btn-resource-4">Explora el mundo del cloud computing</button>
+        <button class="btn-resource-5">Reduce Costos</button>
+      </div>
+    </main>
+    <script src="../../js/user/dashuser.js"></script>
+  </body>
+</html>

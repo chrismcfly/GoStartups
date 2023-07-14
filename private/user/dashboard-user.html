@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard Usuario</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/e5b94360-364f-434f-b419-ce8394fe6d9d/webchat/config.js" defer></script>
+  </head>
+  <body>
+    <!-- (A) SIDEBAR -->
+    <div id="pgside">
+      <!-- (A1) BRANDING OR USER -->
+      <!-- LINK TO DASHBOARD OR LOGOUT -->
+      <div id="pguser">
+        <img src="../../img/dashboard/potato.png">
+        <i class="txt" id="pgname">Usuario</i>
+      </div>
+
+      <!-- (A2) MENU ITEMS -->
+      <a href="#" class="current">
+        <i class="ico">&#9733;</i>
+        <i class="txt">Inicio</i>
+      </a>
+      <a href="dashboard-user-recursos.html">
+        <i class="ico">&#9728;</i>
+        <i class="txt">Recursos Gratis</i>
+      </a>
+      <a href="dashboard-user-soporte.html">
+        <i class="ico">&#9737;</i>
+        <i class="txt">Soporte</i>
+      </a>
+      <a href="dashboard-user-planes.html">
+        <i class="ico">&bowtie;</i>
+        <i class="txt">Planes</i>
+      </a>
+      <a href="#" id="salir">
+        <i class="ico">&CircleTimes;</i>
+        <i class="txt">Salir</i>
+      </a>
+    </div>
+
+    <!-- (B) MAIN -->
+    <main id="pgmain">
+      <h2 id="pgwelcome">Tu Nombre</h2>
+      <div class="actualizaciones">
+        <h3 style="text-align: left;">Lista de Actualizaciones</h3>
+        <h4>Version 1.0.0</h4>
+        <p>Interfaz de usuario intuitiva: Hemos mejorado la interfaz de usuario para que sea más intuitiva y fácil de usar.</p>
+        <p>Asesoramiento personalizado: Ahora ofrecemos asesoramiento personalizado para ayudar a los emprendedores en el desarrollo de su startup.</p>
+        <p>Ampliación de recursos educativos: Hemos agregado más recursos educativos gratuitos, incluyendo cursos en línea</p>
+        <p>Mejoras en la plataforma: Hemos realizado mejoras en nuestra plataforma para brindar una experiencia más fluida y fácil de usar. </p>
+        <br>
+        <h4>Version 0.9.0</h4>
+        <p>Inicio de sesión y registro: Implementamos la funcionalidad de inicio de sesión y registro de usuarios.</p>
+        <p>Dashboard del usuario: Presentamos un nuevo dashboard del usuario que te permite gestionar y controlar tu perfil de startup de manera eficiente.</p>
+        <p>Ampliación de los planes de precios: Hemos aumentado nuestra oferta de planes para adaptarnos mejor a las necesidades de tu startup. Ahora ofrecemos planes básico, premium y profesional con características adicionales y beneficios exclusivos para cada nivel.</p>
+      </div>
+    </main>
+    <script src="../../js/user/dashuser.js"></script>
+  </body>
+</html>
