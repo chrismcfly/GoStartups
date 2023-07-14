@@ -6,8 +6,6 @@ botonMenu.addEventListener('click', ()=>{
     menuMovil.classList.toggle('nav-menu-show');
 });
 
-console.log("HOLA MUNDO");
-
 //SLIDER PAGINA WEB
 const imagenesSlider = ['img/slider-img/slider1.jpg', 'img/slider-img/slider2.jpg', 'img/slider-img/slider3.jpg'];
 let index = 0;
@@ -17,7 +15,6 @@ function Delay(ms){
 }
 
 async function cambiarImagenes() {
-    console.log("hola mundo");
     const sliderImagenes = document.getElementById('imagenes-slider');
     sliderImagenes.style.opacity = "0";
     
@@ -40,4 +37,3 @@ async function cambiarImagenes() {
 
 cambiarImagenes();
 
-console.log(imagenesSlider);
